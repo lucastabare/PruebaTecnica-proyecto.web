@@ -1,0 +1,194 @@
+﻿
+@{
+    ViewBag.Title = "RegistroEmpresa";
+    Layout = null;
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset= utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de empresa</title>
+
+    <!--Estilos de css-->
+    <link href="~/Content/plugins/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/plugins/css/Style_empresa.css" />
+    <!--Archivos JS-->
+    <script src="~/Content/plugins/js/jquery-3.1.1.min.js"></script>
+    <script src="~/Content/plugins/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="divregistroempresa">
+
+                <div class="col-md-12">
+                    <div class="col-md-3">
+                        <span><label><b>Registrar empresa</b></label></span>
+                    </div>
+                </div>
+                <hr />
+                <div class="col-md-12">
+                    <div class="col-md-3">
+                        <img src="~/Content/img/img_logo/TuLogo.png" width="80" alt="Avatar" class="img-circle previsualizar" />
+                        <label for="imagen" class="input-label"><i class="fa fa-cloud-upload"></i>Subir imagen</label><input type="file" name="imagen" id="imagen" />
+                    </div>
+
+                    <div class="col-md-6">
+                        <span><label><b>Razon Social</b></label></span>
+                        <input type="text" class="form-control" id="txtRazonSocial" />
+                    </div>
+
+                    <div class="col-md-3">
+                        <span><label><b></b>CUIT:</label></span>
+                        <input type="text" class="form-control" id="txtCuit" />
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="col-md-3">
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <span><label><b>Email:</b></label></span>
+                        <input type="email" class="form-control" id="email" />
+                    </div>
+
+                    <div class="col-md-2">
+                        <span><label><b>Pais:</b></label></span>
+                        <select class="form-control" id="slpais">
+                            <option value="value"></option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-2">
+                        <span><label><b>Moneda:</b></label></span>
+                        <select class="form-control" id="slmoneda">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="col-md-3">
+
+                    </div>
+                    <div class="col-md-9">
+                        <span><label><b>Direccion:</b></label></span>
+                        <input type="text" class="form-control" id="txtdireccion" />
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="col-md-3">
+
+                    </div>
+
+                    <div class="col-md-2">
+                        <span><label><b>¿Vende con inpuestos?</b></label></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        SI <input type="radio" id="rd" />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        NO <input type="radio" id="rd" />
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="col-md-3">
+
+                    </div>
+
+                    <div class="col-md-2">
+                        <span><label><b>Tipo Impuesto:</b></label></span>
+                        <select class="form-control" id="sltipoinpuesto">
+                            <option></option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-2">
+                        <span><label><b>Porcentaje:</b></label></span>
+                        <select class="form-control" id="slporcentaje">
+                            <option></option>
+                        </select>
+                    </div>
+                    <br />
+                    <br />
+
+                    <div class="col-md-12">
+                        <div class="col-md-3">
+
+                        </div>
+
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-success" id="btnsiguiente">
+                                <img src="~/Content/img/imagenes/flecha-correcta.png" />Siguente
+                            </button>
+                        </div>
+
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-danger" id="btncancelar">
+                                <img src="~/Content/img/imagenes/eliminar.png" />
+                                Cancelar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="registrosuperuser" style="display:none">
+                <div class="col-md-12">
+                    <div class="col-md-3">
+
+                    </div>
+                    <div class="col-md-9">
+                        <span><label><b>Nombre del administrador</b></label></span>
+                        <input type="text" cllas="form-control" id="txtusername" />
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-4">
+                        <span><label><b>Contraseña:</b></label></span>
+                        <input type="password" id="txtuseradmin" />
+                    </div>
+                    <div class="col-md-4">
+                        <span><label><b>Confirmar contraseña:</b></label></span>
+                        <input type="password" id="txtpassword" />
+                    </div>
+
+                </div>
+
+                <div class="col-md-12">
+                    <br />
+                    <div class="col-md-3"></div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-success" id="btn">
+                            <img src="~/Content/img/imagenes/salvar.png" />
+                            Registrar
+                        </button>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-danger" id="">
+                            <img src="~/Content/img/imagenes/flecha-izquierda.png" />
+                            Atras
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+</body>
+</html>
+
