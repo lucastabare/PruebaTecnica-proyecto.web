@@ -125,7 +125,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ModelList.cs" />
+    <Compile Include="Models\modelList.cs" />
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -393,6 +393,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\js\jquery-3.4.1.min.map" />
     <Content Include="Scripts\js\jquery-3.4.1.slim.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PruebaTecnica-proyecto.web.BUSINESS\PruebaTecnica.proyecto.web.BUSINESS.csproj">
+      <Project>{359a638c-739e-4b1d-ac6d-f26e6c1811a3}</Project>
+      <Name>PruebaTecnica.proyecto.web.BUSINESS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PruebaTecnica-proyecto.web.CLIENTS\PruebaTecnica.proyecto.web.CLIENTS.csproj">
+      <Project>{4f54608f-863f-40da-b512-bfd1d46329b4}</Project>
+      <Name>PruebaTecnica.proyecto.web.CLIENTS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PruebaTecnica-proyecto.web.ENTITY\PruebaTecnica.proyecto.web.ENTITY.csproj">
+      <Project>{b4ef89a1-9e4f-4035-b741-158809c07be2}</Project>
+      <Name>PruebaTecnica.proyecto.web.ENTITY</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

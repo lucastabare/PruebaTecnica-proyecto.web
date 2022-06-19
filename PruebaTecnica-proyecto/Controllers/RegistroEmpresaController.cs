@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PruebaTecnica.proyecto.Models;
+using PruebaTecnica.proyecto.web.BUSINESS;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +10,9 @@ namespace PruebaTecnica_proyecto.Controllers
 {
     public class RegistroEmpresaController : Controller
     {
+        private modelList model;
+        
+        private BUPais bupais;
 
         public ActionResult RegistroEmpresa()
         {
