@@ -125,6 +125,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ModelList.cs" />
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -332,6 +333,8 @@
     <Content Include="Content\plugins\sweetalert2\sweetalert.js" />
     <Content Include="Content\plugins\sweetalert2\sweetalert.min.js" />
     <Content Include="Content\plugins\sweetalert2\sweetalert2.all.js" />
+    <Content Include="Content\style\style.css" />
+    <Content Include="Content\style\style_login.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -339,6 +342,7 @@
     <Content Include="obj\Debug\PruebaTecnica-proyecto.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\PruebaTecnica-proyecto.dll" />
     <Content Include="obj\Debug\PruebaTecnica-proyecto.pdb" />
+    <Content Include="Scripts\app\registroEmpresa.js" />
     <Content Include="Scripts\js\bootstrap.js" />
     <Content Include="Scripts\js\bootstrap.min.js" />
     <None Include="Scripts\js\jquery-3.4.1.intellisense.js" />
@@ -369,10 +373,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\plugins\Validarcontraseñas\js\" />
-    <Folder Include="Content\style\" />
-    <Folder Include="Models\" />
     <Folder Include="obj\Debug\TempPE\" />
-    <Folder Include="Scripts\app\" />
     <Folder Include="Views\RegistroEmpresaControlller\" />
   </ItemGroup>
   <ItemGroup>
