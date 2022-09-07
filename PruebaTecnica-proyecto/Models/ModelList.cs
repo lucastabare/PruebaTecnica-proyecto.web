@@ -1,10 +1,8 @@
-﻿
-using PruebaTecnica_proyecto.web.ENTITY.Response;
+﻿using PruebaTecnica.Proyecto.web.ENTITY.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
- 
 
 namespace PruebaTecnica_proyecto.Models
 {
@@ -12,5 +10,4 @@ namespace PruebaTecnica_proyecto.Models
     {
         public List<ResponsePais> listPais { get; set; }
     }
-
 }

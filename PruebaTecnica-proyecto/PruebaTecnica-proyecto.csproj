@@ -395,17 +395,17 @@
     <Content Include="Scripts\js\jquery-3.4.1.slim.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PruebaTecnica-proyecto.web.BUSINESS\PruebaTecnica.proyecto.web.BUSINESS.csproj">
-      <Project>{359a638c-739e-4b1d-ac6d-f26e6c1811a3}</Project>
-      <Name>PruebaTecnica.proyecto.web.BUSINESS</Name>
+    <ProjectReference Include="..\PruebaTecnica.Proyecto.web.BUSINESS\PruebaTecnica.Proyecto.web.BUSINESS.csproj">
+      <Project>{a8f64a57-c0ef-4377-9461-1d31f04bc9e2}</Project>
+      <Name>PruebaTecnica.Proyecto.web.BUSINESS</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PruebaTecnica-proyecto.web.CLIENTS\PruebaTecnica.proyecto.web.CLIENTS.csproj">
-      <Project>{4f54608f-863f-40da-b512-bfd1d46329b4}</Project>
-      <Name>PruebaTecnica.proyecto.web.CLIENTS</Name>
+    <ProjectReference Include="..\PruebaTecnica.Proyecto.web.CLIENTES\PruebaTecnica.Proyecto.web.CLIENTES.csproj">
+      <Project>{0faeef85-1f01-4be0-89d8-f87d1cacdfd1}</Project>
+      <Name>PruebaTecnica.Proyecto.web.CLIENTES</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PruebaTecnica-proyecto.web.ENTITY\PruebaTecnica.proyecto.web.ENTITY.csproj">
-      <Project>{b4ef89a1-9e4f-4035-b741-158809c07be2}</Project>
-      <Name>PruebaTecnica.proyecto.web.ENTITY</Name>
+    <ProjectReference Include="..\PruebaTecnica.Proyecto.web.ENTITY\PruebaTecnica.Proyecto.web.ENTITY.csproj">
+      <Project>{3488306a-3db8-4082-96a9-4366d5ea43ff}</Project>
+      <Name>PruebaTecnica.Proyecto.web.ENTITY</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
